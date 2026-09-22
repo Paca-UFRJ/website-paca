@@ -3,11 +3,16 @@
 {% block content %}
 <h1>Publicações</h1>
 <ol>
-    {% for page in section.pages | sort (attribute="date") | reverse %}
+    {%- set year_of_previous_paper = -1 %}
+    {%- for page in section.pages | sort (attribute="date") | reverse %}
+    {%- if page.year != year_of_previous_paper %}
+    <h2>{{page.year}}</h2>
+    {%- endif %}
+    {%- set_global year_of_previous_paper = page.year %}
     <li>
         <strong><a href="{{page.permalink | safe}}">{{page.title}}</a></strong><br>
         {{page.extra.authors}}<br>
-        <em>{{page.extra.where}}</em>, {{page.year}}
+        <em>{{page.extra.where}}</em>
         {% if page.extra.pdf is defined -%}
         <a class="symbol-link" href="{{page.extra.pdf}}">📄</a>
         {%- endif %}
@@ -18,6 +23,6 @@
         <a class="symbol-link" href="{{page.extra.url | safe}}">🔗</a>
         {%- endif %}
     </li>
-    {% endfor %}
+    {%- endfor %}
 </ol>
 {% endblock content %}

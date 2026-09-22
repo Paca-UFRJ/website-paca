@@ -1,0 +1,23 @@
+{% extends "section.html" %}
+
+{% block content %}
+<h1>Publicações</h1>
+<ol>
+    {% for page in section.pages | sort (attribute="date") | reverse %}
+    <li>
+        <strong><a href="{{page.permalink | safe}}">{{page.title}}</a></strong><br>
+        {{page.extra.authors}}<br>
+        <em>{{page.extra.where}}</em>, {{page.year}}
+        {% if page.extra.pdf is defined -%}
+        <a class="symbol-link" href="{{page.extra.pdf}}">📄</a>
+        {%- endif %}
+        {% if page.extra.doi is defined -%}
+        <a class="symbol-link" href="https://dx.doi.org/{{page.extra.doi | safe}}">🔗</a>
+        {%- endif %}
+        {% if page.extra.url is defined -%}
+        <a class="symbol-link" href="{{page.extra.url | safe}}">🔗</a>
+        {%- endif %}
+    </li>
+    {% endfor %}
+</ol>
+{% endblock content %}

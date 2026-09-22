@@ -24,4 +24,4 @@ template = "index.html"
 
 
 # Trabalhos
-[Veja a lista aqui](@/papers.md)
+[Veja a lista aqui](/papers)

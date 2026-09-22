@@ -22,4 +22,6 @@ template = "index.html"
 
 ## Alunos
 
+
 # Trabalhos
+[Veja a lista aqui](@/papers.md)

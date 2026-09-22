@@ -4,7 +4,7 @@ title = "Two Induction-Free Constructions For Finite Automata Determinization"
 
 [extra]
 authors = "Matheus do Ó, Hugo Musso Gualandi"
-where = "Brazilian Symposium on Programming Languages"
+where = "Brazilian Symposium on Programming Languages (SBLP)"
 #doi =
 pdf = "2026-automata-determinization-constructions.pdf"
 +++

@@ -4,7 +4,7 @@ title = "Correct by Construction Gram-Schmidt Process"
 
 [extra]
 authors = "João Victor Lopez Pereira, Daniel Kiyoshi Hashimoto, Hugo Musso Gualandi, João Paixão"
-where = "Brazilian Symposium on Programming Languages"
+where = "Brazilian Symposium on Programming Languages (SBLP)"
 #doi = ""
 pdf = "2026-correct-gram-schmidt.pdf"
 +++

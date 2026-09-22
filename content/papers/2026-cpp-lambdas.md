@@ -4,7 +4,7 @@ title = "A Large-Scale Analysis of C++ Lambdas and Their Capture Lists in Openso
 
 [extra]
 authors = "Luiz Romário Santana Rios, Hugo Musso Gualandi"
-where = "Brazilian Symposium on Programming Languages"
+where = "Brazilian Symposium on Programming Languages (SBLP)"
 #doi = "?"
 pdf = "2026-cpp-lambdas.pdf"
 +++

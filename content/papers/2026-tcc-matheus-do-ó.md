@@ -3,7 +3,7 @@ date = 2026-02-11
 title = "Uma prova do algoritmo de Brzozowski via álgebras de Kleene"
 
 [extra]
-authors = "Matheus do Ó, Hugo Musso Gualandi, João Paixão"
+authors = "Matheus do Ó, Hugo Musso Gualandi"
 where = "Trabalho de Conclusão de Curso, BCC/UFRJ"
 url = "http://hdl.handle.net/11422/29128"
 +++

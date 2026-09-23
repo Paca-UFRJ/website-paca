@@ -11,5 +11,3 @@ template = "index.html"
 
 [Link para o Edital de Seleção do PPGI](https://www.ppgi.ufrj.br/)
 
-# Trabalhos
-[Veja a lista aqui](/papers)

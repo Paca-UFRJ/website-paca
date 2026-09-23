@@ -18,6 +18,13 @@ pessoas = [
         lattes = "https://lattes.cnpq.br/5705386762324718",
     },
     {
+        nome = "Júlia de Araújo Mota",
+        github = "https://github.com/JuliaMota",
+        email = "juliamota@ufrj.br",
+        lattes = "https://lattes.cnpq.br/9526487600398939",
+        categoria = "aluna de doutorado",
+    },
+    {
         nome = "Bruno Llacer Trotti",
         github = "https://github.com/brunoccos",
         lattes = "https://lattes.cnpq.br/8796249595867247",
@@ -32,6 +39,8 @@ pessoas = [
     },
     {
         nome = "Vítor Bedin",
+        email = "vitorab@ic.ufrj.br",
+        github = "https://github.com/vitorbedin12",
         lattes = "https://lattes.cnpq.br/5508617612740716",
         categoria = "aluno de graduação",
     },

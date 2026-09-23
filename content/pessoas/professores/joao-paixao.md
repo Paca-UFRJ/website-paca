@@ -3,5 +3,5 @@
 nome = "João Paixão"
 email = "jpaixao@ic.ufrj.br"
 url = "https://www.joaopaixao.com"
-lattes = "blo"
+lattes = "5705386762324718"
 +++

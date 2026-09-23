@@ -1,0 +1,52 @@
+# This file is inside templates folder so that "zola serve" can watch it.
+pessoas = [
+    {
+        nome = "Hugo Musso Gualandi",
+        email = "hugomg@ic.ufrj.br",
+        website = "https://hugomg.github.io",
+        lattes = "https://lattes.cnpq.br/4885349527302978",
+    },
+    {
+        nome = "Hugo Nobrega",
+        email = "hugonobrega@ic.ufrj.br",
+        website = "https://www.hugonobrega.com",
+        lattes = "https://lattes.cnpq.br/6062840240299930",
+    },
+    {
+        nome = "João Paixão",
+        email = "jpaixao@ic.ufrj.br",
+        website = "https://www.joaopaixao.com",
+        lattes = "https://lattes.cnpq.br/5705386762324718",
+    },
+    {
+        nome = "Bruno Llacer Trotti",
+        github = "https://github.com/brunoccos",
+        lattes = "https://lattes.cnpq.br/8796249595867247",
+        categoria = "aluno de mestrado",
+    },
+    {
+        nome = "Evandro Rhari",
+        email = "evandrorlg@ic.ufrj.br",
+        github = "https://github.com/E-rhari",
+        lattes = "https://lattes.cnpq.br/7439324390045883",
+        categoria = "aluno de graduação",
+    },
+    {
+        nome = "Vítor Bedin",
+        lattes = "https://lattes.cnpq.br/5508617612740716",
+        categoria = "aluno de graduação",
+    },
+    {
+        nome = "Eduarda Marques",
+        email = "eduardasm@ic.ufrj.br",
+        github = "https://github.com/eduardamarks1",
+        lattes = "https://lattes.cnpq.br/1721086651074457",
+        categoria = "aluna de graduação recém-concluída",
+    },
+    {
+        nome = "Lucas Rufino Martelotte",
+        github = "https://github.com/lucas-martelotte",
+        lattes = "https://lattes.cnpq.br/7863105600978305",
+        categoria = "ex-aluno",
+    },
+]

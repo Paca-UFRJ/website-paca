@@ -4,39 +4,29 @@
 {% block content %}
 <h1>Grupo de Pesquisa UFRJ (ainda sem nome)</h1>
 
-
 {{ section.content | safe }}
 
 <h1>Pessoas</h1>
 
-{% set pessoas = get_section(path="pessoas/_index.md") %}
-
-{% for sub in pessoas.subsections %}
-{% set categoria = get_section(path=sub) %}<br />
-{% if categoria.pages | length %}
-<h2>{{ categoria.title }}</h2>
-{% endif %}
+{% set data = load_data(path="templates/pessoas.toml") %}
 <ul>
-  {% for pessoa in categoria.pages | sort(attribute="extra.nome") %}
+  {% for pessoa in data.pessoas %}
   <li>
-    {% if pessoa.extra.categoria is defined %}
-    {% set categoria = " ("~ pessoa.extra.categoria ~")" %}
-    {% else %}
-    {% set categoria = "" %}
+    {{pessoa.nome}}{% if pessoa.categoria %} ({{pessoa.categoria}}){% endif %}
+    {% if pessoa.website %}
+        <a href="{{ pessoa.website | safe }}">[Website]</a>
     {% endif %}
-    {% if pessoa.extra.url is defined %}
-    <a href="{{ pessoa.extra.url | safe }}">{{pessoa.extra.nome}}</a>{{categoria}}
-    {% else %}
-    {{ pessoa.extra.nome }}{{categoria}}
+    {% if pessoa.github %}
+        <a href="{{ pessoa.github | safe }}">[Github]</a>
     {% endif %}
-    <br />
-    <em>{{ pessoa.extra.email }}</em>
-    {% if pessoa.extra.lattes is defined %}
-    <a href="http://lattes.cnpq.br/{{ pessoa.extra.lattes | safe }}">CV Lattes</a>
+    {% if pessoa.email %}
+        <a href="mailto:{{ pessoa.email }}">[Email]</a>
+    {% endif %}
+    {% if pessoa.lattes %}
+        <a href="{{ pessoa.lattes | safe }}">[CV Lattes]</a>
     {% endif %}
   </li>
   {% endfor %}
 </ul>
-{% endfor %}
 
 {% endblock content %}

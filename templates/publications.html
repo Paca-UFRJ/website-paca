@@ -2,9 +2,9 @@
 
 {% block content %}
 <h1>Publicações</h1>
-<ol>
   {%- for year, papers in section.pages | group_by(attribute="year") %}
     <h2>{{year}}</h2>
+    <ul>
     {%- for paper in papers | sort(attribute="date") | reverse %}
         <li>
             <strong><a href="{{paper.permalink | safe}}">{{paper.title}}</a></strong><br>
@@ -21,6 +21,7 @@
             {%- endif %}
         </li>
     {%- endfor %}
+    </ul>
   {%- endfor %}
 </ol>
 {% endblock content %}

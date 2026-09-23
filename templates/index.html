@@ -6,24 +6,36 @@
 
 {{ section.content | safe }}
 
+
 <h1>Pessoas</h1>
 
-{% set data = load_data(path="content/pessoas.toml") %}
+{% set data_cats = load_data(path="content/categorias.toml") %}
+{% set data_pessoas = load_data(path="content/pessoas.toml") %}
+
 <ul>
-  {% for pessoa in data.pessoas %}
-  <li>
-    {{pessoa.nome}}{% if pessoa.categoria %} ({{pessoa.categoria}}){% endif %}
-    {% if pessoa.website %}
-        <a href="{{ pessoa.website | safe }}">[Website]</a>
-    {% endif %}
-    {% if pessoa.github %}
-        <a href="{{ pessoa.github | safe }}">[Github]</a>
-    {% endif %}
-    {% if pessoa.email %}
-        <a href="mailto:{{ pessoa.email }}">[Email]</a>
-    {% endif %}
-    {% if pessoa.lattes %}
-        <a href="{{ pessoa.lattes | safe }}">[CV Lattes]</a>
+{% for categoria in data_cats.categorias %}
+    <b>{{categoria}}</b>
+    {% for pessoa in data_pessoas.pessoas | sort(attribute="nome") %}
+        {% if pessoa.categoria == categoria %}
+            <li>
+                {{pessoa.nome}}{% if pessoa.misc %} ({{pessoa.misc}}){% endif %}
+                {% if pessoa.website %}
+                    <a href="{{ pessoa.website | safe }}">[Website]</a>
+                {% endif %}
+                {% if pessoa.github %}
+                    <a href="{{ pessoa.github | safe }}">[Github]</a>
+                {% endif %}
+                {% if pessoa.email %}
+                    <a href="mailto:{{ pessoa.email }}">[Email]</a>
+                {% endif %}
+                {% if pessoa.lattes %}
+                    <a href="{{ pessoa.lattes | safe }}">[CV Lattes]</a>
+                {% endif %}
+            </li>
+        {% endif %}
+    {% endfor %}
+{% endfor %}
+</ul>
     {% endif %}
   </li>
   {% endfor %}

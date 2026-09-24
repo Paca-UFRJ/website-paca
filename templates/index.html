@@ -9,13 +9,12 @@
 
 <h1>Pessoas</h1>
 
-{% set data_cats = load_data(path="content/categorias.toml") %}
-{% set data_pessoas = load_data(path="content/pessoas.toml") %}
+{% set data = load_data(path="content/pessoas.toml") %}
 
 <ul>
-{% for categoria in data_cats.categorias %}
+{% for categoria in data.categorias %}
     <b>{{categoria}}</b>
-    {% for pessoa in data_pessoas.pessoas | sort(attribute="nome") %}
+    {% for pessoa in data.pessoas | sort(attribute="nome") %}
         {% if pessoa.categoria == categoria %}
             <li>
                 {{pessoa.nome}}{% if pessoa.misc %} ({{pessoa.misc}}){% endif %}

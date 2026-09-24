@@ -1,3 +1,9 @@
+categorias = [
+    "Professores",
+    "Alunos",
+    "Outros",
+]
+
 pessoas = [
     {
         nome = "Hugo Musso Gualandi",

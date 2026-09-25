@@ -39,26 +39,28 @@
 <h1>Trabalhos Recentes</h1>
 
 {% set trabalhos = get_section(path="papers/_index.md") %}
-{% set limite = 5 %}
 <ol>
-  {% for trabalho in trabalhos.pages | sort(attribute="date") | reverse %}
-    {% if loop.index < limite+1 %}
-        <li>
-            <strong><a href="{{trabalho.permalink | safe}}">{{trabalho.title}}</a></strong><br>
-            {{trabalho.extra.authors}}<br />
-            {{trabalho.year}}.
-            <em>{{trabalho.extra.where}}</em>
-            {% if trabalho.extra.pdf is defined -%}
-                <a class="symbol-link" href="{{trabalho.extra.pdf}}">📄</a>
-            {%- endif %}
-            {% if trabalho.extra.doi is defined -%}
-                <a class="symbol-link" href="https://dx.doi.org/{{trabalho.extra.doi | safe}}">🔗</a>
-            {%- endif %}
-            {% if trabalho.extra.url is defined -%}
-                <a class="symbol-link" href="{{trabalho.extra.url | safe}}">🔗</a>
-            {%- endif %}
-        </li>
-    {% endif %}
+  {% for trabalho in
+      trabalhos.pages |
+      sort(attribute="date") |
+      reverse |
+      slice(end=5)
+  %}
+    <li>
+        <strong><a href="{{trabalho.permalink | safe}}">{{trabalho.title}}</a></strong><br>
+        {{trabalho.extra.authors}}<br />
+        {{trabalho.year}}.
+        <em>{{trabalho.extra.where}}</em>
+        {% if trabalho.extra.pdf is defined -%}
+            <a class="symbol-link" href="{{trabalho.extra.pdf}}">📄</a>
+        {%- endif %}
+        {% if trabalho.extra.doi is defined -%}
+            <a class="symbol-link" href="https://dx.doi.org/{{trabalho.extra.doi | safe}}">🔗</a>
+        {%- endif %}
+        {% if trabalho.extra.url is defined -%}
+            <a class="symbol-link" href="{{trabalho.extra.url | safe}}">🔗</a>
+        {%- endif %}
+    </li>
   {% endfor %}
 </ol>
 

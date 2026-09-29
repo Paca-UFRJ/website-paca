@@ -5,6 +5,9 @@ categorias = [
 ]
 
 pessoas = [
+    #
+    # Professores
+    #
     {
         nome = "Hugo Musso Gualandi",
         email = "hugomg@ic.ufrj.br",
@@ -26,35 +29,15 @@ pessoas = [
         lattes = "https://lattes.cnpq.br/5705386762324718",
         categoria = "Professores",
     },
-    {
-        nome = "Júlia de Araújo Mota",
-        github = "https://github.com/JuliaMota",
-        email = "juliamota@ufrj.br",
-        lattes = "https://lattes.cnpq.br/9526487600398939",
-        misc = "aluna de doutorado",
-        categoria = "Alunos",
-    },
+    #
+    # Outros membros, em ordem alfabética
+    #
     {
         nome = "Bruno Llacer Trotti",
+        email = "brunollacer@hotmail.com",
         github = "https://github.com/brunoccos",
         lattes = "https://lattes.cnpq.br/8796249595867247",
         misc = "aluno de mestrado",
-        categoria = "Alunos",
-    },
-    {
-        nome = "Evandro Rhari",
-        email = "evandrorlg@ic.ufrj.br",
-        github = "https://github.com/E-rhari",
-        lattes = "https://lattes.cnpq.br/7439324390045883",
-        misc = "aluno de graduação",
-        categoria = "Alunos",
-    },
-    {
-        nome = "Vítor Bedin",
-        email = "vitorab@ic.ufrj.br",
-        github = "https://github.com/vitorbedin12",
-        lattes = "https://lattes.cnpq.br/5508617612740716",
-        misc = "aluno de graduação",
         categoria = "Alunos",
     },
     {
@@ -66,6 +49,38 @@ pessoas = [
         categoria = "Outros",
     },
     {
+        nome = "Evandro Rhari",
+        email = "evandrorlg@ic.ufrj.br",
+        github = "https://github.com/E-rhari",
+        lattes = "https://lattes.cnpq.br/7439324390045883",
+        misc = "aluno de graduação",
+        categoria = "Alunos",
+    },
+    {
+        nome = "Gustavo Freire",
+        email = "gustavofreire@ic.ufrj.br",
+        github = "https://github.com/GustavoMF31",
+        lattes = "http://lattes.cnpq.br/5912988683959222",
+        misc = "aluno de graduação",
+        categoria = "Alunos",
+    },
+    {
+        nome = "João Victor Lopez Pereira",
+        email = "joaovictorlopezpereira@gmail.com",
+        github = "https://github.com/joaovictorlopezpereira",
+        lattes = "http://lattes.cnpq.br/8523792359393439",
+        misc = "aluno de graduação",
+        categoria = "Alunos",
+    },
+    {
+        nome = "Júlia de Araújo Mota",
+        email = "juliamota@ufrj.br",
+        github = "https://github.com/JuliaMota",
+        lattes = "https://lattes.cnpq.br/9526487600398939",
+        misc = "aluna de doutorado",
+        categoria = "Alunos",
+    },
+    {
         nome = "Lucas Rufino Martelotte",
         github = "https://github.com/lucas-martelotte",
         lattes = "https://lattes.cnpq.br/7863105600978305",
@@ -73,33 +88,33 @@ pessoas = [
         categoria = "Outros",
     },
     {
-        nome = "João Victor",
-        github = "https://github.com/joaovictorlopezpereira",
-        email = "joaovictorlopezpereira@gmail.com",
-        lattes = "http://lattes.cnpq.br/8523792359393439",
-        misc = "aluno de graduação",
-        categoria = "Alunos",
-    },
-    {
         nome = "Matheus do Ó",
-        website = "https://mth0.github.io/",
         email = "matheusost@ic.ufrj.br",
+        website = "https://mth0.github.io/",
         lattes = "http://lattes.cnpq.br/4987787469819036",
         misc = "aluno de mestrado",
         categoria = "Alunos",
     },
     {
-        nome = "Romário ",
-        website = "https://bertha.social/@romariorios",
+        nome = "Luiz Romário Santana Rios",
         email = "luizromario@ufrj.br",
+        website = "https://bertha.social/@romariorios",
         lattes = "http://lattes.cnpq.br/4723903005585065",
         misc = "aluno de doutorado",
         categoria = "Alunos",
     },
     {
+        nome = "Vítor Bedin",
+        email = "vitorab@ic.ufrj.br",
+        github = "https://github.com/vitorbedin12",
+        lattes = "https://lattes.cnpq.br/5508617612740716",
+        misc = "aluno de graduação",
+        categoria = "Alunos",
+    },
+    {
         nome = "William Victor",
-        github = "https://github.com/WillPaixao",
         email = "williamvqp@ic.ufrj.br",
+        github = "https://github.com/WillPaixao",
         lattes = "http://lattes.cnpq.br/5996626749851319",
         misc = "aluno de graduação",
         categoria = "Alunos",

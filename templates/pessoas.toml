@@ -1,3 +1,7 @@
+# This file is inside /templates so that "zola serve" can watch it and refresh
+# the content when it changes. The root directory doesn't work because it is not
+# watched for updates and /content is bad because it makes the toml file public.
+
 categorias = [
     "Professores",
     "Alunos",

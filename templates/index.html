@@ -1,13 +1,10 @@
 {% extends "section.html" %}
 
-
 {% block content %}
-<h1>PACA – Grupo de Pesquisa em Linguagens de <b>P</b>rogramação, <b>Á</b>lgebra, <b>C</b>ategorias e <b>A</b>lgoritmos da UFRJ</h1>
+<h1>{{section.title}}</h1>
+{{ section.content | safe}}
 
-{{ section.content | safe }}
-
-
-<h1>Pessoas</h1>
+<h2>Pessoas</h2>
 
 {% set data = load_data(path="/templates/pessoas.toml") %}
 
@@ -36,7 +33,7 @@
 {% endfor %}
 </ul>
 
-<h1>Trabalhos Recentes</h1>
+<h2>Trabalhos Recentes</h2>
 
 {% set trabalhos = get_section(path="papers/_index.md") %}
 <ol>

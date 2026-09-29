@@ -1,12 +1,17 @@
 +++
-title = "PACA – Grupo de Pesquisa em Linguagens de Programação, Álgebra, Categorias e Algoritmos da UFRJ"
+title = "PACA – Grupo de Pesquisa em Linguagens de Programação, Álgebra, Categorias e Algoritmos"
 template = "index.html"
 +++
 
-(descrição/interesses) 
-- Linguagens de Programação
+O grupo de pesquisa PACA é sediado no [Instituto de Computação da UFRJ](https://ic.ufrj.br),
+
+Áreas de interesse
+- Linguagens de Programação (compila
 - Teoria de Categorias
 - Raciocínio calculacional
 
-[Link para o Edital de Seleção do PPGI](https://www.ppgi.ufrj.br/)
+## Inscrições
+
+Tem interesse em fazer uma pós-graduação conosco?
+Entre em contato por email e se atente ao [Edital de Seleção do PPGI](https://www.ppgi.ufrj.br/).
 
